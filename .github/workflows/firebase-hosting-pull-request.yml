@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm run public
+      - run: npm run beydest/build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BEYDEST_EF6E6 }}
-          projectId: beydest-ef6e6
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BEYDESTAPP }}
+          projectId: beydestapp

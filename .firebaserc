@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "beydest-ef6e6"
-  }
+    "default": "beydestapp",
+    "production": "beydestapp"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

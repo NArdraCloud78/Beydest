@@ -1,0 +1,47 @@
+.contact-image {
+  position: relative;
+  display: inline-block;
+  
+
+  
+}
+
+.contact-image img {
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: rgba(144, 207, 226, 0.5); 
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.contact-image:hover img {
+  transform: scale(1.1); 
+  filter: blur(2px); 
+}
+
+.contact-image:hover .overlay-text {
+  animation: bounce 0.5s; 
+  background-color: rgb(101, 195, 233); 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  40% {
+    transform: translate(-50%, -45%);
+  }
+  60% {
+    transform: translate(-50%, -55%);
+  }
+}

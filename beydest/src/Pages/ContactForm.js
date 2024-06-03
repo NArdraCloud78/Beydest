@@ -42,7 +42,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/api/var/contact', formData)
+    axios.post('http://localhost:5000/api/var/contact  ', formData)
       .then((response) => {
         navigate('/home');
         console.log(response.data);
